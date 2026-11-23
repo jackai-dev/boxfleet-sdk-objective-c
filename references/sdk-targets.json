@@ -1,0 +1,412 @@
+{
+  "contract_fingerprint": "e3fd4c744ae8933c0e0bd0c21a692897795a14657e577fb82108500d39f2ac8d",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "BoxFleetHostedControlPlaneBoxfleetIoSDK@0.3.0",
+        "ecosystem": "SwiftPM",
+        "entry": "OWClient",
+        "import": "#import \"OWClient.h\""
+      },
+      "operations": {
+        "cancelJob": {
+          "member": "cancelJob",
+          "method": "POST",
+          "path": "/v1/jobs/{jobId}/cancel",
+          "resource": "jobs",
+          "signature": "- (nullable NSDictionary *)cancelJob:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "closeHostedWorkspace": {
+          "member": "closeHostedWorkspace",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/close",
+          "resource": "workspaces",
+          "signature": "- (nullable NSDictionary *)closeHostedWorkspace:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "closePersistentBox": {
+          "member": "closePersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/close",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)closePersistentBox:(NSString *)owPath0 boxId:(NSString *)owPath1 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "controlUser": {
+          "member": "controlUser",
+          "method": "POST",
+          "path": "/v1/admin/users",
+          "resource": "admin",
+          "signature": "- (nullable NSDictionary *)controlUser:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "createBillingPortal": {
+          "member": "createBillingPortal",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/billing/portal",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)createBillingPortal:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "createBox": {
+          "member": "createBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/boxes",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)createBox:(NSString *)owPath0 body:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "createCheckout": {
+          "member": "createCheckout",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/billing/checkout",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)createCheckout:(NSString *)owPath0 body:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "getAccountsConfig": {
+          "member": "getAccountsConfig",
+          "method": "GET",
+          "path": "/v1/accounts/config",
+          "resource": "accounts",
+          "signature": "- (nullable NSDictionary *)getAccountsConfigWithError:(NSError * _Nullable * _Nullable)error"
+        },
+        "getAdminConsole": {
+          "member": "getAdminConsole",
+          "method": "GET",
+          "path": "/v1/admin/console",
+          "resource": "admin",
+          "signature": "- (nullable NSDictionary *)getAdminConsoleWithError:(NSError * _Nullable * _Nullable)error"
+        },
+        "getAdminPlans": {
+          "member": "getAdminPlans",
+          "method": "GET",
+          "path": "/v1/admin/plans",
+          "resource": "admin",
+          "signature": "- (nullable NSDictionary *)getAdminPlansWithError:(NSError * _Nullable * _Nullable)error"
+        },
+        "getAuthGate": {
+          "member": "getAuthGate",
+          "method": "GET",
+          "path": "/v1/auth/gate",
+          "resource": "auth",
+          "signature": "- (nullable NSDictionary *)getAuthGateWithError:(NSError * _Nullable * _Nullable)error"
+        },
+        "getBilling": {
+          "member": "getBilling",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/billing",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)getBilling:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "getBox": {
+          "member": "getBox",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)getBox:(NSString *)owPath0 boxId:(NSString *)owPath1 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "getEntitlements": {
+          "member": "getEntitlements",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/entitlements",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)getEntitlements:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "getFleet": {
+          "member": "getFleet",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/fleet",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)getFleet:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "getFleetPolicy": {
+          "member": "getFleetPolicy",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/fleet/policy",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)getFleetPolicy:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "getHealth": {
+          "member": "getHealth",
+          "method": "GET",
+          "path": "/health",
+          "resource": "health",
+          "signature": "- (nullable NSDictionary *)getHealthWithError:(NSError * _Nullable * _Nullable)error"
+        },
+        "getHostedWorkspace": {
+          "member": "getHostedWorkspace",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}",
+          "resource": "workspaces",
+          "signature": "- (nullable NSDictionary *)getHostedWorkspace:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "getHostedWorkspaceOperation": {
+          "member": "getHostedWorkspaceOperation",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}/operations/{operationId}",
+          "resource": "workspaces",
+          "signature": "- (nullable NSDictionary *)getHostedWorkspaceOperation:(NSString *)owPath0 operationId:(NSString *)owPath1 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "getHostedWorkspaceSource": {
+          "member": "getHostedWorkspaceSource",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}/source",
+          "resource": "workspaces",
+          "signature": "- (nullable NSDictionary *)getHostedWorkspaceSource:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "getJob": {
+          "member": "getJob",
+          "method": "GET",
+          "path": "/v1/jobs/{jobId}",
+          "resource": "jobs",
+          "signature": "- (nullable NSDictionary *)getJob:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "getPersistentBox": {
+          "member": "getPersistentBox",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)getPersistentBox:(NSString *)owPath0 boxId:(NSString *)owPath1 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "getPersistentBoxProviderUsage": {
+          "member": "getPersistentBoxProviderUsage",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/usage",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)getPersistentBoxProviderUsage:(NSString *)owPath0 boxId:(NSString *)owPath1 queryItems:(NSArray<NSURLQueryItem *> *)queryItems error:(NSError * _Nullable * _Nullable)error"
+        },
+        "getPlans": {
+          "member": "getPlans",
+          "method": "GET",
+          "path": "/v1/plans",
+          "resource": "plans",
+          "signature": "- (nullable NSDictionary *)getPlansWithError:(NSError * _Nullable * _Nullable)error"
+        },
+        "ingestTelemetry": {
+          "member": "ingestTelemetry",
+          "method": "POST",
+          "path": "/v1/telemetry/ingest",
+          "resource": "telemetry",
+          "signature": "- (nullable NSDictionary *)ingestTelemetry:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "listBoxes": {
+          "member": "listBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/boxes",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)listBoxes:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "listHostedWorkspaces": {
+          "member": "listHostedWorkspaces",
+          "method": "GET",
+          "path": "/v1/workspaces",
+          "resource": "workspaces",
+          "signature": "- (nullable NSDictionary *)listHostedWorkspacesWithError:(NSError * _Nullable * _Nullable)error"
+        },
+        "listInvoices": {
+          "member": "listInvoices",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/billing/invoices",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)listInvoices:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "listJobEvents": {
+          "member": "listJobEvents",
+          "method": "GET",
+          "path": "/v1/jobs/{jobId}/events",
+          "resource": "jobs",
+          "signature": "- (nullable NSDictionary *)listJobEvents:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "listJobs": {
+          "member": "listJobs",
+          "method": "GET",
+          "path": "/v1/jobs",
+          "resource": "jobs",
+          "signature": "- (nullable NSDictionary *)listJobsWithError:(NSError * _Nullable * _Nullable)error"
+        },
+        "listMembers": {
+          "member": "listMembers",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/members",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)listMembers:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "listObservedBoxes": {
+          "member": "listObservedBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/observed-boxes",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)listObservedBoxes:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "listPersistentBoxOffers": {
+          "member": "listPersistentBoxOffers",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/offers",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)listPersistentBoxOffers:(NSString *)owPath0 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "listPersistentBoxes": {
+          "member": "listPersistentBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)listPersistentBoxes:(NSString *)owPath0 queryItems:(NSArray<NSURLQueryItem *> *)queryItems error:(NSError * _Nullable * _Nullable)error"
+        },
+        "listUsers": {
+          "member": "listUsers",
+          "method": "GET",
+          "path": "/v1/admin/users",
+          "resource": "admin",
+          "signature": "- (nullable NSDictionary *)listUsersWithError:(NSError * _Nullable * _Nullable)error"
+        },
+        "listWaitlist": {
+          "member": "listWaitlist",
+          "method": "GET",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "- (nullable NSDictionary *)listWaitlistWithError:(NSError * _Nullable * _Nullable)error"
+        },
+        "openHostedWorkspace": {
+          "member": "openHostedWorkspace",
+          "method": "POST",
+          "path": "/v1/workspaces",
+          "resource": "workspaces",
+          "signature": "- (nullable NSDictionary *)openHostedWorkspace:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "provisionPersistentBox": {
+          "member": "provisionPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)provisionPersistentBox:(NSString *)owPath0 body:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "putFleetPolicy": {
+          "member": "putFleetPolicy",
+          "method": "PUT",
+          "path": "/v1/organizations/{organizationId}/fleet/policy",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)putFleetPolicy:(NSString *)owPath0 body:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "readTelemetry": {
+          "member": "readTelemetry",
+          "method": "GET",
+          "path": "/v1/admin/telemetry",
+          "resource": "admin",
+          "signature": "- (nullable NSDictionary *)readTelemetryWithError:(NSError * _Nullable * _Nullable)error"
+        },
+        "reconcilePersistentBox": {
+          "member": "reconcilePersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/reconcile",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)reconcilePersistentBox:(NSString *)owPath0 boxId:(NSString *)owPath1 body:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "recoverHostedWorkspace": {
+          "member": "recoverHostedWorkspace",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/recover",
+          "resource": "workspaces",
+          "signature": "- (nullable NSDictionary *)recoverHostedWorkspace:(NSString *)owPath0 body:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "register": {
+          "member": "register",
+          "method": "POST",
+          "path": "/v1/auth/register",
+          "resource": "auth",
+          "signature": "- (nullable NSDictionary *)register:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "removeMember": {
+          "member": "removeMember",
+          "method": "DELETE",
+          "path": "/v1/organizations/{organizationId}/members/{userId}",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)removeMember:(NSString *)owPath0 userId:(NSString *)owPath1 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "requestAccess": {
+          "member": "requestAccess",
+          "method": "POST",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "- (nullable NSDictionary *)requestAccess:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "runHostedWorkspace": {
+          "member": "runHostedWorkspace",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/run",
+          "resource": "workspaces",
+          "signature": "- (nullable NSDictionary *)runHostedWorkspace:(NSString *)owPath0 body:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "startPersistentBox": {
+          "member": "startPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/start",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)startPersistentBox:(NSString *)owPath0 boxId:(NSString *)owPath1 body:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "stopBox": {
+          "member": "stopBox",
+          "method": "DELETE",
+          "path": "/v1/organizations/{organizationId}/boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)stopBox:(NSString *)owPath0 boxId:(NSString *)owPath1 error:(NSError * _Nullable * _Nullable)error"
+        },
+        "stopPersistentBox": {
+          "member": "stopPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/stop",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)stopPersistentBox:(NSString *)owPath0 boxId:(NSString *)owPath1 body:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "stripeWebhook": {
+          "member": "stripeWebhook",
+          "method": "POST",
+          "path": "/v1/billing/stripe/webhook",
+          "resource": "billing",
+          "signature": "- (nullable NSDictionary *)stripeWebhookWithError:(NSError * _Nullable * _Nullable)error"
+        },
+        "submitJob": {
+          "member": "submitJob",
+          "method": "POST",
+          "path": "/v1/jobs",
+          "resource": "jobs",
+          "signature": "- (nullable NSDictionary *)submitJob:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "syncObservedBoxes": {
+          "member": "syncObservedBoxes",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/observed-boxes/sync",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)syncObservedBoxes:(NSString *)owPath0 body:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "updateAuthGate": {
+          "member": "updateAuthGate",
+          "method": "PUT",
+          "path": "/v1/auth/gate",
+          "resource": "auth",
+          "signature": "- (nullable NSDictionary *)updateAuthGate:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "updatePlan": {
+          "member": "updatePlan",
+          "method": "POST",
+          "path": "/v1/admin/plans",
+          "resource": "admin",
+          "signature": "- (nullable NSDictionary *)updatePlan:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "upsertMember": {
+          "member": "upsertMember",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/members",
+          "resource": "organizations",
+          "signature": "- (nullable NSDictionary *)upsertMember:(NSString *)owPath0 body:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        },
+        "verifyLicense": {
+          "member": "verifyLicense",
+          "method": "POST",
+          "path": "/v1/auth/verify",
+          "resource": "auth",
+          "signature": "- (nullable NSDictionary *)verifyLicense:(nullable NSDictionary *)body error:(NSError * _Nullable * _Nullable)error"
+        }
+      },
+      "package_directory": "../boxfleethostedcontrolplaneboxfleetiosdk-objective-c-sdk",
+      "package_manifest": "Package.swift",
+      "reference": "api.md",
+      "renderer": "objective_c"
+    }
+  ]
+}
